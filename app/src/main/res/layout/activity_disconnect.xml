@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.disconnect.DisconnectActivity">
+
+    <ImageView
+        android:id="@+id/imgDisc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_group"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="188.69dp"
+        android:layout_marginBottom="224.14dp"
+        android:layout_marginStart="66.69dp"
+        android:layout_marginEnd="66.14dp"
+        />
+
+    <TextView
+        android:id="@+id/txtDisc"
+        android:layout_width="144dp"
+        android:layout_height="20dp"
+        android:text="No Internet Connection"
+        android:textColor="#333333"
+        android:textSize="16dp"
+        android:fontFamily="@font/fjalla_one"
+        android:layout_marginTop="22.14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgDisc"
+        />
+
+    <Button
+        android:id="@+id/btnDisc"
+        android:layout_width="328dp"
+        android:layout_height="40dp"
+        android:text="Try again"
+        android:textColor="@color/white"
+        android:background="@color/red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDisc"
+        android:layout_marginTop="110dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
